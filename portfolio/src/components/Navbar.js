@@ -6,6 +6,13 @@ import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import { CgGitFork } from "react-icons/cg";
+import {
+  AiOutlineHome,
+  AiOutlineUser,
+  AiOutlineGlobal,
+  AiOutlineFundProjectionScreen,
+  AiOutlineFile,
+} from "react-icons/ai";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
@@ -51,6 +58,9 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                <AiOutlineHome
+                  style={{ marginBottom: "4px", marginRight: "2px" }}
+                />
                 Home
               </Nav.Link>
             </Nav.Item>
@@ -60,6 +70,9 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
+                <AiOutlineUser
+                  style={{ marginBottom: "4px", marginRight: "2px" }}
+                />
                 About
               </Nav.Link>
             </Nav.Item>
@@ -69,6 +82,9 @@ function NavBar() {
                 to="/skills"
                 onClick={() => updateExpanded(false)}
               >
+                <AiOutlineGlobal
+                  style={{ marginBottom: "4px", marginRight: "2px" }}
+                />
                 Skills
               </Nav.Link>
             </Nav.Item>
@@ -78,6 +94,9 @@ function NavBar() {
                 to="/experiance"
                 onClick={() => updateExpanded(false)}
               >
+                <AiOutlineFundProjectionScreen
+                  style={{ marginBottom: "4px", marginRight: "2px" }}
+                />
                 Experiance
               </Nav.Link>
             </Nav.Item>
@@ -87,14 +106,18 @@ function NavBar() {
                 to="/education"
                 onClick={() => updateExpanded(false)}
               >
-                Education
+                <AiOutlineFile
+                  style={{ marginBottom: "4px", marginRight: "2px" }}
+                />
+                Projects
               </Nav.Link>
             </Nav.Item>
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/hrishikesh8904"
                 target="_blank"
-                className="fork-btn-inner"
+                className="fork-btn-inner gitbutton"
+                variant="outline-dark"
               >
                 <CgGitFork style={{ fontSize: "1.2rem" }}></CgGitFork>
               </Button>
