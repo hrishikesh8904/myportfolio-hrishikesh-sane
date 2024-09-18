@@ -13,15 +13,15 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar></Navbar>
-        <div className="sections">
+        <section className="sections">
           <Element name="Home">
             <Routes>
-              <Route path="/" exact component={Home}></Route>
+              <Route path="/" exact element={<Home></Home>}></Route>
             </Routes>
           </Element>
           <Element name="about">
             <Routes>
-              <Route path="/about" component={About}></Route>
+              <Route path="/about" component={<About />}></Route>
             </Routes>
           </Element>
           <Element name="skills">
@@ -39,7 +39,7 @@ function App() {
               <Route path="/education" component={Education}></Route>
             </Routes>
           </Element>
-        </div>
+        </section>
       </div>
     </BrowserRouter>
   );
