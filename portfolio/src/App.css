@@ -134,7 +134,7 @@
 
 .home-section {
   position: relative;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-position: top center;
   padding-top: 104px;
@@ -181,4 +181,8 @@
   font-family: "Wellfleet", serif;
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+.aboutpara {
+  text-align: center;
 }

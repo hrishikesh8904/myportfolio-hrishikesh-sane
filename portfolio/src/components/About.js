@@ -8,7 +8,7 @@ function About() {
     <section id="about">
       <Container>
         <Row>
-          <Col>oiihfoehf</Col>
+          <Col className="aboutpara">oiihfoehf</Col>
           <Col>djodjnfo</Col>
         </Row>
       </Container>
