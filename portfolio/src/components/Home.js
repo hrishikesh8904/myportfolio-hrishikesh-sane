@@ -5,6 +5,8 @@ import React from "react";
 import bitmoji from "../assets/grin smile.png";
 import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import Typewriter from "typewriter-effect";
+import About from "./About";
 function Home() {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -41,7 +43,24 @@ function Home() {
                 <Container className="home-header">
                   <h1 className="home-text-one">Hi There,</h1>
                   <h1 className="home-text-two">
-                    I'M <span className="header-name">HRISHIKESH SANE</span>
+                    I am <span className="header-name">HRISHIKESH SANE</span>
+                  </h1>
+                  <h1 className="home-text-three">
+                    <Typewriter
+                      options={{ loop: true }}
+                      onInit={(typewriter) => {
+                        typewriter
+                          .typeString("Full Stack Web Developer")
+                          .pauseFor(1000)
+                          .deleteAll()
+                          .typeString("Computer Science Student")
+                          .pauseFor(1000)
+                          .deleteAll()
+                          .typeString("Machine Learning")
+                          .pauseFor(1000)
+                          .start();
+                      }}
+                    ></Typewriter>
                   </h1>
                 </Container>
               </Row>
@@ -57,6 +76,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
+      <About></About>
     </section>
   );
 }

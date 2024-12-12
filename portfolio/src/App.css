@@ -174,5 +174,11 @@
   font-weight: 500;
 }
 .header-name {
-  color: blue;
+  color: #00ffff;
+  text-shadow: 4px 4px black;
+}
+.home-text-three {
+  font-family: "Wellfleet", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
