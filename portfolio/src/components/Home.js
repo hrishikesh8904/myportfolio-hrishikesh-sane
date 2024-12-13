@@ -2,11 +2,12 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import React from "react";
-import bitmoji from "../assets/grin smile.png";
+import bitmoji from "./assets/grin smile.png";
 import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import About from "./About";
+import Navbar from "./Navbar"
+// import About from "./About";
 function Home() {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -34,7 +35,8 @@ function Home() {
     y.set(yPercentage);
   };
   return (
-    <section className="home">
+    <section className="Home">
+      <Navbar></Navbar>
       <Container fluid className="home-section">
         <Container>
           <Row className="justify-content-md-center">
@@ -76,7 +78,6 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <About></About>
     </section>
   );
 }

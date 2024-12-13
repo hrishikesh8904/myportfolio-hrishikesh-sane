@@ -1,6 +1,5 @@
-import Navbar from "./components/Navbar.js";
-import Home from "./components/Home.js";
-import About from "./components/About.js";
+import Home from "./components/Home";
+import About from "./components/About";
 import Skills from "./components/Skills.js";
 import Education from "./components/Education.js";
 import Experiance from "./components/Experiance.js";
@@ -12,33 +11,14 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Navbar></Navbar>
         <section className="sections">
-          <Element name="Home">
-            <Routes>
-              <Route path="/" exact element={<Home></Home>}></Route>
-            </Routes>
-          </Element>
-          <Element name="about">
-            <Routes>
-              <Route path="/about" component={<About />}></Route>
-            </Routes>
-          </Element>
-          <Element name="skills">
-            <Routes>
-              <Route path="/skills" component={Skills}></Route>
-            </Routes>
-          </Element>
-          <Element name="experiance">
-            <Routes>
-              <Route path="/experiance" component={Experiance}></Route>
-            </Routes>
-          </Element>
-          <Element name="education">
-            <Routes>
-              <Route path="/education" component={Education}></Route>
-            </Routes>
-          </Element>
+          <Routes>
+            <Route path="/" element={<Home></Home>}></Route>
+            <Route path="/about" element={<About></About>}></Route>
+            <Route path="/skills" component={Skills}></Route>
+            <Route path="/experiance" component={Experiance}></Route>
+            <Route path="/education" component={Education}></Route>
+          </Routes>
         </section>
       </div>
     </BrowserRouter>

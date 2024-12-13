@@ -1,7 +1,7 @@
 import "../App.css";
 import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from "../assets/favicon.ico";
+import logo from "./assets/favicon.ico";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
