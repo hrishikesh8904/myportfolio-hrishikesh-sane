@@ -97,7 +97,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "4px", marginRight: "2px" }}
                 />
-                Experiance
+                Experience
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
