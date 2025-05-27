@@ -2,7 +2,7 @@ import "../App.css";
 import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "./assets/favicon.ico";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import { CgGitFork } from "react-icons/cg";
@@ -57,60 +57,74 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "nav-link nav-link-active" : "nav-link"
+                }
+                onClick={() => updateExpanded(false)}
+              >
                 <AiOutlineHome
                   style={{ marginBottom: "4px", marginRight: "2px" }}
                 />
                 Home
-              </Nav.Link>
+              </NavLink>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link
-                as={Link}
+              <NavLink
                 to="/about"
+                className={({ isActive }) =>
+                  isActive ? "nav-link nav-link-active" : "nav-link"
+                }
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineUser
                   style={{ marginBottom: "4px", marginRight: "2px" }}
                 />
                 About
-              </Nav.Link>
+              </NavLink>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link
-                as={Link}
+              <NavLink
                 to="/skills"
+                className={({ isActive }) =>
+                  isActive ? "nav-link nav-link-active" : "nav-link"
+                }
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineGlobal
                   style={{ marginBottom: "4px", marginRight: "2px" }}
                 />
                 Skills
-              </Nav.Link>
+              </NavLink>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link
-                as={Link}
+              <NavLink
                 to="/experience"
+                className={({ isActive }) =>
+                  isActive ? "nav-link nav-link-active" : "nav-link"
+                }
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "4px", marginRight: "2px" }}
                 />
                 Experience
-              </Nav.Link>
+              </NavLink>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link
-                as={Link}
+              <NavLink
                 to="/education"
+                className={({ isActive }) =>
+                  isActive ? "nav-link nav-link-active" : "nav-link"
+                }
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFile
                   style={{ marginBottom: "4px", marginRight: "2px" }}
                 />
                 Projects
-              </Nav.Link>
+              </NavLink>
             </Nav.Item>
             <Nav.Item className="fork-btn">
               <Button

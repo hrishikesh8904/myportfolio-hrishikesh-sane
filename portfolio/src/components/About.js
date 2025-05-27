@@ -24,20 +24,25 @@ function About() {
                   </Col>
                   <Col className="about-two-text">
                     Let me Introduce Myself
-                    
                     <p className="about-two-one">
-                      Hello! I’m Hrishikesh Sane, a 3rd-year Computer Science
-                      and Engineering student at VIT Vellore. With a keen
-                      interest in data structures and algorithms, I am always
-                      eager to tackle complex problem-solving challenges. I am
-                      passionate about continuous learning and currently diving
-                      into the fascinating world of machine learning. Proficient
-                      in programming languages like C++, Python, and Java, I
-                      also enjoy crafting dynamic and user-friendly websites
-                      through web development. As I explore the intersection of
-                      software engineering and machine learning, I am excited to
-                      contribute to innovative projects that make a meaningful
-                      impact.
+                      Hello! I’m Hrishikesh Sane, a final year Computer Science
+                      and Engineering student at VIT Vellore. impact.
+                    </p>
+                    <p className="about-two-one">
+                      I have a strong interest in data structures and algorithms
+                      and enjoy tackling complex problem-solving challenges.
+                      With a passion for continuous learning, I am currently
+                      exploring the exciting world of machine learning.
+                    </p>
+                    <p className="about-two-one">
+                      I am proficient in C++, Python, and Java, and also have
+                      experience in building dynamic, user-friendly websites
+                      through web development.
+                    </p>
+                    <p className="about-two-one">
+                      As I delve deeper into the intersection of software
+                      engineering and machine learning, I look forward to
+                      contributing to impactful and innovative projects.
                     </p>
                   </Col>
                 </Row>
