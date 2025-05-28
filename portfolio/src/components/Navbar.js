@@ -98,20 +98,7 @@ function NavBar() {
                 Skills
               </NavLink>
             </Nav.Item>
-            <Nav.Item>
-              <NavLink
-                to="/experience"
-                className={({ isActive }) =>
-                  isActive ? "nav-link nav-link-active" : "nav-link"
-                }
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "4px", marginRight: "2px" }}
-                />
-                Experience
-              </NavLink>
-            </Nav.Item>
+
             <Nav.Item>
               <NavLink
                 to="/education"
@@ -124,6 +111,20 @@ function NavBar() {
                   style={{ marginBottom: "4px", marginRight: "2px" }}
                 />
                 Projects
+              </NavLink>
+            </Nav.Item>
+            <Nav.Item>
+              <NavLink
+                to="/experience"
+                className={({ isActive }) =>
+                  isActive ? "nav-link nav-link-active" : "nav-link"
+                }
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineFundProjectionScreen
+                  style={{ marginBottom: "4px", marginRight: "2px" }}
+                />
+                Experience
               </NavLink>
             </Nav.Item>
             <Nav.Item className="fork-btn">
