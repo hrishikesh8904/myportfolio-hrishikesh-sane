@@ -338,3 +338,30 @@ body {
   font-weight: 700;
   font-family: monospace;
 }
+
+.project-card {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: auto;
+}
+
+.project-card-view {
+  box-shadow: 0 4px 5px 3px #93a1a1;
+  color: black;
+  background-color: white;
+  opacity: 0.9;
+  transition: all 0.2s ease 0s;
+  height: 100%;
+}
+
+.project-card-view:hover {
+  transform: scale(1.02);
+  overflow: hidden;
+  box-shadow: 0 4px 5px 6px white;
+}
+
+.project-card-img {
+  padding: 5px;
+}

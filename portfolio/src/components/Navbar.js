@@ -101,7 +101,7 @@ function NavBar() {
 
             <Nav.Item>
               <NavLink
-                to="/education"
+                to="/projects"
                 className={({ isActive }) =>
                   isActive ? "nav-link nav-link-active" : "nav-link"
                 }
