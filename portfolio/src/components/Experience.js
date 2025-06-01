@@ -34,7 +34,7 @@ function Experiance() {
               className="vertical-timeline-element--work"
               contentStyle={{ background: "#3b3838", color: "black" }}
               contentArrowStyle={{ borderRight: "14px solid #3b3838" }}
-              date="June 2024 - present"
+              date="June 2024 - June 2025"
               iconStyle={{ background: "#3b3838", color: "#fff" }}
               icon={
                 <img
