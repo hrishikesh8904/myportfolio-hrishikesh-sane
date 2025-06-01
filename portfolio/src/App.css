@@ -365,3 +365,14 @@ body {
 .project-card-img {
   padding: 5px;
 }
+
+.resume-button {
+  box-shadow: 0 4px 5px 3px #93a1a1;
+  transition: all 0.2s ease 0s;
+}
+
+.resume-button:hover {
+  transform: scale(1.04);
+  overflow: hidden;
+  box-shadow: 0 4px 5px 6px #93a1a1;
+}

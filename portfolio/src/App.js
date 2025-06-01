@@ -3,8 +3,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects.js";
 import Education from "./components/Education.js";
-import Experience from "./components/Experience.js";
-import { Link, Element } from "react-scroll";
+// import Experience from "./components/Experience.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 

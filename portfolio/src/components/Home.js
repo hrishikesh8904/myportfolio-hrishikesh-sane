@@ -1,12 +1,13 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import React from "react";
 import bitmoji from "./assets/grin smile.png";
 import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import Navbar from "./Navbar"
+import Navbar from "./Navbar";
+import Resume from "./assets/Resume.pdf";
+import { FaFileDownload } from "react-icons/fa";
+import { AiOutlineFile } from "react-icons/ai";
 // import About from "./About";
 function Home() {
   const x = useMotionValue(0);
@@ -74,6 +75,29 @@ function Home() {
               >
                 <img src={bitmoji} className="img" alt="bitmoji"></img>
               </motion.div>
+            </Col>
+          </Row>
+          <Row className="py-5 px-5 d-flex justify-content-center justify-content-md-start">
+            <Col xs="auto">
+              <a href={Resume} download="Hrishikesh_Resume.pdf">
+                <Button
+                  className="resume-button border-3"
+                  variant="outline-dark"
+                >
+                  <FaFileDownload size={15} />
+                  &nbsp;Resume
+                </Button>
+              </a>
+            </Col>
+            <Col xs="auto">
+              <Button
+                href="/projects"
+                className="resume-button border-3"
+                variant="outline-dark"
+              >
+                <AiOutlineFile />
+                &nbsp; Projects
+              </Button>
             </Col>
           </Row>
         </Container>
