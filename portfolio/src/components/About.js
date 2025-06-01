@@ -4,11 +4,17 @@ import Col from "react-bootstrap/Col";
 import React from "react";
 import Navbar from "./Navbar";
 import myPhoto from "./assets/hrishikesh.jpg";
+import { Button } from "react-bootstrap";
+import {
+  AiOutlineMail,
+  AiOutlineGithub,
+  AiOutlineLinkedin,
+} from "react-icons/ai";
 function About() {
   return (
     <section className="about">
       <Navbar></Navbar>
-      <Container className="about-section">
+      <Container className="about-section d-flex flex-column">
         <Row>
           <div className="card">
             <div className="card-overlay"></div>
@@ -49,6 +55,45 @@ function About() {
               </Container>
             </div>
           </div>
+        </Row>
+        <Row className="py-5">
+          <Col>
+            <h1 className="contact-heading">Contact Me</h1>
+          </Col>
+        </Row>
+        <Row
+          className="py-5 d-flex justify-content-center"
+          style={{ width: "100%" }}
+        >
+          <Col className="d-flex justify-content-center">
+            <Button
+              href="mailto:hrishikesh.sane202289@gmail.com?subject=Hello&body=I would like to get in touch."
+              className="resume-button me-3"
+              variant="outline-dark"
+            >
+              <AiOutlineMail />
+              &nbsp; Email
+            </Button>
+
+            <Button
+              href="https://github.com/hrishikesh8904"
+              target="_blank"
+              className="resume-button me-3"
+              variant="outline-dark"
+            >
+              <AiOutlineGithub />
+              &nbsp; Github
+            </Button>
+            <Button
+              href="https://www.linkedin.com/in/hrishikesh-sane-353254240/"
+              target="_blank"
+              className="resume-button me-3"
+              variant="outline-dark"
+            >
+              <AiOutlineLinkedin />
+              &nbsp; Linkedin
+            </Button>
+          </Col>
         </Row>
       </Container>
     </section>

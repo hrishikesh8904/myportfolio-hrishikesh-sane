@@ -80,10 +80,7 @@ function Home() {
           <Row className="py-5 px-5 d-flex justify-content-center justify-content-md-start">
             <Col xs="auto">
               <a href={Resume} download="Hrishikesh_Resume.pdf">
-                <Button
-                  className="resume-button border-3"
-                  variant="outline-dark"
-                >
+                <Button className="resume-button" variant="outline-dark">
                   <FaFileDownload size={15} />
                   &nbsp;Resume
                 </Button>
@@ -92,7 +89,7 @@ function Home() {
             <Col xs="auto">
               <Button
                 href="/projects"
-                className="resume-button border-3"
+                className="resume-button"
                 variant="outline-dark"
               >
                 <AiOutlineFile />
