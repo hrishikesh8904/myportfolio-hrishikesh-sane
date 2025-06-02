@@ -32,7 +32,7 @@ function About() {
                     Let me Introduce Myself
                     <p className="about-two-one">
                       Hello! I’m Hrishikesh Sane, a final year Computer Science
-                      and Engineering student at VIT Vellore. impact.
+                      and Engineering student at VIT Vellore.
                     </p>
                     <p className="about-two-one">
                       I have a strong interest in data structures and algorithms
